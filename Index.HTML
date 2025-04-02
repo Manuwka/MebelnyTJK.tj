@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список заказов</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Список заказов</h1>
+    <div class="order-form">
+        <input type="text" id="order-name" placeholder="Название заказа">
+        <input type="text" id="order-type" placeholder="Вид заказа">
+        <input type="number" id="order-amount" placeholder="Всего заказа">
+        <button id="add-order" class="green-button">Добавить заказ</button>
+    </div>
+    <div class="search-bar">
+        <input type="text" id="search-order" placeholder="Поиск по имени заказа">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Название заказа</th>
+                <th>Вид заказа</th>
+                <th>Всего заказа</th>
+                <th>Статус заказа</th>
+                <th>Чек</th>
+            </tr>
+        </thead>
+        <tbody id="orders-list"></tbody>
+    </table>
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="order-details"></p>
+        </div>
+    </div>
+    <script src="4ek.js"></script>
+</body>
+</html>
